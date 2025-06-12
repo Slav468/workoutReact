@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap");
+
+:root {
+  --accent: rgba(181, 52, 113, 1);
+  --black: rgba(26, 6, 18, 1);
+  --dark-purple: rgba(49, 12, 36, 1);
+  --purple: rgba(81, 23, 52, 1);
+  --white: rgba(241, 232, 232, 1);
+  --darkClear: rgba(51, 51, 51, 1);
+  --whiteClear: rgba(255, 255, 255, 1);
+
+  --font-family: "Sofia Sans";
+
+  /* box-shadow */
+  --bx-accent: 0 4px 4px rgba(var(--accent) 0.25);
+  --bx-16: 0 3px 6px rgba(var(--darkClear) 0.16);
+
+  --fontDefault: 16px;
+}
