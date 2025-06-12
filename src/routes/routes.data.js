@@ -1,7 +1,7 @@
 import { createBrowserRouter } from 'react-router';
 import Auth from '../components/screens/auth/Auth';
 import Home from '../components/screens/home/Home';
-import NewWorkout from '../components/screens/new-workout/NewWorkout';
+import NewWorkout from '../components/screens/newWorkout/NewWorkout';
 import Profile from '../components/screens/profile/Profile';
 
 const routers = createBrowserRouter([
@@ -16,9 +16,9 @@ const routers = createBrowserRouter([
     isAuth: false,
   },
   {
-    path: 'new-workout',
+    path: 'newWorkout',
     component: NewWorkout,
-    isAuth: true,
+    isAuth: false,
   },
   {
     path: 'profile',

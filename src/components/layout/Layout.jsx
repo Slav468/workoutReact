@@ -1,8 +1,9 @@
 import cn from 'clsx';
+import Body from './body/Body';
 import Header from './header/Header';
 import styles from './Layout.module.scss';
 
-const Layout = ({ children, bgImage, heading = '', backLink = '/' }) => {
+const Layout = ({ children, bgImage, heading = 'sdd', backLink = '/' }) => {
   return (
     <div
       className={cn(styles.wrapper, {
@@ -11,10 +12,7 @@ const Layout = ({ children, bgImage, heading = '', backLink = '/' }) => {
       style={{ backgroundImage: `url(${bgImage})` }}
     >
       <Header backLink={backLink} />
-
-      {heading && <h1 className={styles.heading}>{heading}</h1>}
-
-      {children && <div>{children}</div>}
+      <Body heading={heading} />
     </div>
   );
 };
